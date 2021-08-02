@@ -1,3 +1,9 @@
+import ContaController from 'controller/conta-controller';
+import Conta from './model/Conta';
+import Poupanca from './model/Poupanca';
+import ContaBonificada from 'model/ContaBonificada';
+import Cliente from './model/Cliente';
+import Clientes from './model/Clientes';
 let contaController = new ContaController();
 contaController.listar();
 const c1 = new Conta('1', -100);

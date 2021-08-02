@@ -1,4 +1,4 @@
-class Cliente {
+export default class Cliente {
     constructor(nome, cpf, conta) {
         this._nome = nome;
         this._cpf = cpf;

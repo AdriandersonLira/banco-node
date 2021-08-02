@@ -1,4 +1,4 @@
-class Conta {
+export default class Conta {
     constructor(numero, saldo = 0) {
         this._numero = numero;
         this._saldo = saldo;

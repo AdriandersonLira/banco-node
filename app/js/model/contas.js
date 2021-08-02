@@ -1,4 +1,5 @@
-class Contas {
+import Conta from './Conta';
+export default class Contas {
     constructor() {
         this.contas = new Array();
         const c1 = new Conta('1', 100);

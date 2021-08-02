@@ -1,4 +1,5 @@
-class Clientes {
+import Cliente from './Cliente';
+export default class Clientes {
 
     private _clientes: Array<Cliente>;
 
@@ -8,6 +9,16 @@ class Clientes {
 
     inserir(cliente: Cliente): void {
         this._clientes.push(cliente);
+    }
+
+    remover(cpf: string): void {
+        const clienteARemover = this.pesquisarPorCPF(cpf);
+        if (clienteARemover) {
+            const indiceConta = this._clientes.indexOf(clienteARemover);
+            if (indiceConta > -1) {
+                this._clientes.splice(indiceConta, 1);
+            }
+        }
     }
 
     listar(): Array<Cliente> {

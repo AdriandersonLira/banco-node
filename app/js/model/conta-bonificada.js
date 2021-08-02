@@ -1,4 +1,5 @@
-class ContaBonificada extends Conta {
+import Conta from 'conta';
+export default class ContaBonificada extends Conta {
     constructor(numero, saldo) {
         super(numero, saldo);
     }

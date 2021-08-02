@@ -1,4 +1,5 @@
-class Poupanca extends Conta{
+import Conta from './Conta';
+export default class Poupanca extends Conta{
 
     private _dataAniversario: Date;
 

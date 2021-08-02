@@ -1,4 +1,5 @@
-class Cliente {
+import Conta from './Conta';
+export default class Cliente {
 
     private _nome: string;
     private _cpf: string;

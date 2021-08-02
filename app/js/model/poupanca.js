@@ -1,4 +1,5 @@
-class Poupanca extends Conta {
+import Conta from './Conta';
+export default class Poupanca extends Conta {
     constructor(numero, saldo) {
         super(numero, saldo);
         this._dataAniversario = new Date();

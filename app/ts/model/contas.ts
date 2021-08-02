@@ -1,4 +1,5 @@
-class Contas {
+import Conta from './Conta';
+export default class Contas {
 
     private contas: Array<Conta>;
 

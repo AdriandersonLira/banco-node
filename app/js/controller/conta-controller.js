@@ -1,4 +1,6 @@
-class ContaController {
+import Contas from '../model/Contas';
+import Conta from '../model/Conta';
+export default class ContaController {
     constructor() {
         this.inputNumero =
             document.querySelector("#conta");
